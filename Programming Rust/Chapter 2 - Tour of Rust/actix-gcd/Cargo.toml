@@ -1,0 +1,19 @@
+[package]
+name = "actix-gcd"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at 
+# https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# Each line in the "dependencies" section gives the name of a crate on crates.io,
+# and the version of that crate we would like to use.
+
+# Web framework
+actix-web = "1.0.8"
+
+# Serialization
+# (Offers an excellent way to handle data from web forms, but only available if
+#  the "derive" feature is selected. Thats why its requested here).
+serde = { version = "1.0", features = ["derive"] }
